@@ -10,7 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 // Initialize DB
 require('./initDB')();
 
-const ProductRoute = require('./Routes/Product.route');
+const ProductRoute = require('./routes/product.route');
 
 app.use('/products', ProductRoute);
 
